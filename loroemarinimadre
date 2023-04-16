@@ -226,7 +226,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			errorBottom : 5, 
 			
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' + 
-			''Se commetti un errore, una  <font color="#ff0000"><b>X</b></font> rossa apparirà. ' + 
+			'Se commetti un errore, una  <font color="#ff0000"><b>X</b></font> rossa apparirà. ' + 
 			'Premi l'altro tasto per continuare.<p/>',
 	        remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
@@ -267,7 +267,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 				'<font color="#0000FF">focalAtt</font>, ' + 
 				'e per le parole che appartengono alla categoria <font color="#31b404">focalCat</font>.<br/>' + 
 				'Premi con l'indice sinistro il tasto <b>E</b>per le parole che non appartengono a queste categorie.<br/><br/>' + 
-				''Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà. ' + 
+				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà. ' + 
 				'Premi l'altro tasto per continuare.<br/><br/>' + 
 				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto per iniziare.</font></p></div>', 
             instTemplateTouch: '<div><p align="center" ' +
