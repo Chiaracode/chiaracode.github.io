@@ -62,6 +62,7 @@ define(['pipAPI', 'https://chiaracode.github.io/loroemarinimadrepratica'
 	
 		
        	practiceBlock : false, 
+	nCategoryAttributeBlocks : 1,
 		
 		base_url : {//Where are your images?
 			image : '/implicit/user/mmarini/private_nancy_consent2/'	},
@@ -133,6 +134,7 @@ define(['pipAPI', 'https://chiaracode.github.io/loroemarinimadrepratica'
 		], 
 		
 		practiceBlock : false, 
+		nCategoryAttributeBlocks : 1,
 		base_url : {//Where are your images?
 			image : '/implicit/user/mmarini/nancyracepics/'
 		}
