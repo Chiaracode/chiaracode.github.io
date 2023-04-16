@@ -35,9 +35,9 @@ define(['pipAPI', 'https://chiaracode.github.io/Madre_pratica'
 			
 			
 				{
-				name : 'Fiori', //Category label.
+				name : 'Fiore', //Category label.
 				title : {
-					media : {word : 'Fiori'}, 
+					media : {word : 'Fiore'}, 
 					css : {color:'#31b404','font-size':'1.8em'}, 
 					height : 4,
 					startStimulus : {
