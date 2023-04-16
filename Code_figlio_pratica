@@ -8,9 +8,9 @@ define(['pipAPI', 'https://chiaracode.github.io/Madre_pratica'
 	    
 		categories : [ 
             {
-				name : 'Insetti',
+				name : 'Insetto',
 				title : {
-					media : {word : 'Insetti'}, //Name of the category presented in the task.
+					media : {word : 'Insetto'}, //Name of the category presented in the task.
 					css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
 					height : 4, //Used to position the "Or" in the combined block.
 					startStimulus : {
