@@ -105,46 +105,49 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 					stimulusCss : {color:'#31b404','font-size':'2em'}
 				}
 			],
+			
 			attribute1 : 
 			{
-				name : 'Vittima di Discriminazione', 
+				name : 'Buono', 
 				title : {
-					media : {word : 'Vittima di Discriminazione'}, 
+					media : {word : 'Buono'}, 
 					css : {color:'#0000FF','font-size':'1.8em'}, 
 					height : 4,
 					startStimulus : {
-						media : {word : 'Bersaglio, Oppresso, Perseguitato'}, 
+						media : {word : 'Amore, Piacevole, Fantastico, Meraviglioso'}, 
 						css : {color:'#0000FF','font-size':'1em'}, 
 						height : 2
 					}
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word : 'Bersaglio'}, 
-					{word : 'Oppresso'}, 
-					{word : 'Perseguitato'}
+					{word : 'Amore'}, 
+					{word : 'Piacevole'}, 
+					{word : 'Fantastico'},
+					{word : 'Meraviglioso'}
 				], 
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2em'}
-			},	
+			},
+			
 			attribute2 : 
 			{
-				name : 'Autore di Discriminazione', 
+				name : 'Cattivo', 
 				title : {
-					media : {word : 'Autore di Discriminazione'}, 
+					media : {word : 'Cattivo'}, 
 					css : {color:'#0000FF','font-size':'1.8em'}, 
 					height : 4,
 					startStimulus : {
-						media : {word : 'Perpetratore, Abusatore, Sessista'}, 
+						media : {word : 'Odio, Spiacevole, Orribile, Terribile'}, 
 						css : {color:'#0000FF','font-size':'1em'}, 
 						height : 2
 					}
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word : 'Perpetratore'}, 
-					{word : 'Abusatore'}, 
-					{word : 'Sessista'}
+					{word : 'Odio'},
+					{word : 'Spiacevole'}, 
+					{word : 'Orribile'},
+					{word : 'Terribile'}
 				], 
-			
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2em'} 
 			},
@@ -170,10 +173,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			
 			//Whether to start with a practice block.
 			practiceBlock : true, 
-			nPracticeBlockTrials : 8, //Should be at least 8 trials.
+			nPracticeBlockTrials : 16, //Should be at least 8 trials.
 
 			//Number of blocks per focal category-attribute combination.
-			nCategoryAttributeBlocks : 4, 
+			nCategoryAttributeBlocks : 1, 
 
 			//Whether to switch the focal attribute only once in the task (after all the blocks with the first focal attribute), 
 			//Or after every exhaustion of all the category-attribute combinations (e.g., twice if nCategoryAttributeBlocks).
@@ -1177,3 +1180,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 		
 	return iatExtension;
 });
+
+
+
+
+
+
+
+
+
+
