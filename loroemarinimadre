@@ -37,7 +37,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 720,
-				proportions : 0.68,
+				proportions : 0.75,
 				background: '#ffffff',
 				borderWidth: 5,
 				canvasBackground: '#ffffff',
