@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://hiaracode.github.io/madrepraticatouch'
+define(['pipAPI', 'https://chiaracode.github.io/madrepraticatouch'
 
 ], function(APIConstructor, batExtension){
     var API = new APIConstructor();
