@@ -266,7 +266,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			instTemplate: '<div><p align="center" style="font-size:20px; font-family:arial"><br/>' +
 				'<font color="#000000"><u>Parte blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				"Put a right finger on the <b>I</b> key for items that belong to the  category" + 
+				"Put a right finger on the <b> I </b> key for items that belong to the category " + 
 				'<font color="#0000FF">focalAtt</font>, ' + 
 				'and for items that belong to the category <font color="#31b404">focalCat</font>.<br/>' + 
 				"Put a left finger on the <b>E</b> key for items that do not belong to these categories.<br/><br/>" + 
@@ -276,10 +276,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
             instTemplateTouch: '<div><p align="center" ' +
 				'<br/><font color="#000000"><u>Part blockNum of nBlocks </u><br/></p>' + 
 				'<p align="left" style="margin-left:5px"> ' +
-				'Put a right finger on the <b>right</b> green area for items that belong to the category ' + 
+				' a right finger on the <b>right</b> green area for items that belong to the category ' + 
 				'<font color="#0000FF">focalAtt</font>, ' + 
 				'and for items that belong to the category <font color="#31b404">focalCat</font>.<br/>' + 
-				'Put a left finger on the <b>left</b> green area for items that do not belong to these categories.<br/>' + 
+				' a left finger on the <b>left</b> green area for items that do not belong to these categories.<br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/>' + 
 				'<p align="center">Touch the <b>lower </b> green area to start.</font></p></div>', 				
@@ -414,7 +414,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
                     return val;
                 }
             },
-            // Set logs into an input (i.e. put them wherever you want)
+            // Set logs into an in (i.e.  them wherever you want)
             send: function(name, serialized){
                 window.minnoJS.logger(serialized);
             }
@@ -431,20 +431,20 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 		*/
 		API.addSettings('canvas',piCurrent.canvas);
 		API.addSettings('base_url',piCurrent.base_url);
-	    var leftInput = !isTouch ? {handle:'left',on:'keypressed',key:'e'} : {handle:'left',on:'click', stimHandle:'left'};
-		var rightInput = !isTouch ? {handle:'right',on:'keypressed',key:'i'} : {handle:'right',on:'click', stimHandle:'right'};
-		var proceedInput = !isTouch ? {handle:'space',on:'space'} : {handle:'space',on:'bottomTouch', css:piCurrent.bottomTouchCss};
+	    var leftIn = !isTouch ? {handle:'left',on:'keypressed',key:'e'} : {handle:'left',on:'click', stimHandle:'left'};
+		var rightIn = !isTouch ? {handle:'right',on:'keypressed',key:'i'} : {handle:'right',on:'click', stimHandle:'right'};
+		var proceedIn = !isTouch ? {handle:'space',on:'space'} : {handle:'space',on:'bottomTouch', css:piCurrent.bottomTouchCss};
 		/**
 		 * Create default Trial
 		 */
 		API.addTrialSets('sort',{
 			// by default each trial is correct, this is modified in case of an error
-			data: {score:0, parcel:'first'}, //We're using only one parcel for computing the score.
+			data: {score:0, parcel:'first'}, //We're using only one parcel for coming the score.
 			// set the interface for trials
-			input: [
+			in: [
 				{handle:'skip1',on:'keypressed', key:27}, //Esc + Enter will skip blocks
-				leftInput,
-				rightInput
+				leftIn,
+				rightIn
 			],
 
 			// user interactions
@@ -458,8 +458,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 				// error
 				{
 					conditions: [
-						{type:'inputEqualsTrial', property:'corResp',negate:true}, //Not the correct response.
-						{type:'inputEquals',value:['right','left']}	// responded with one of the two responses
+						{type:'inEqualsTrial', property:'corResp',negate:true}, //Not the correct response.
+						{type:'inEquals',value:['right','left']}	// responded with one of the two responses
 					],
 					actions: [
 						{type:'showStim',handle:'error'},	// show error stimulus
@@ -469,18 +469,18 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 
 				// correct
 				{
-					conditions: [{type:'inputEqualsTrial', property:'corResp'}],	// check if the input handle is equal to correct response (in the trial's data object)
+					conditions: [{type:'inEqualsTrial', property:'corResp'}],	// check if the in handle is equal to correct response (in the trial's data object)
 					actions: [
-						{type:'removeInput',handle:['left','right']}, //Cannot respond anymore
+						{type:'removeIn',handle:['left','right']}, //Cannot respond anymore
 						{type:'hideStim', handle: 'All'},											// hide everything
 						{type:'log'},																// log this trial
-						{type:'setInput',input:{handle:'end', on:'timeout',duration:piCurrent.ITIDuration}} // trigger the "end action after ITI"
+						{type:'setIn',in:{handle:'end', on:'timeout',duration:piCurrent.ITIDuration}} // trigger the "end action after ITI"
 					]
 				},
 
 				// end after ITI
 				{
-					conditions: [{type:'inputEquals',value:'end'}],
+					conditions: [{type:'inEquals',value:'end'}],
 					actions: [
 						{type:'endTrial'}
 					]
@@ -488,14 +488,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 
 				// skip block
 				{
-					conditions: [{type:'inputEquals',value:'skip1'}],
+					conditions: [{type:'inEquals',value:'skip1'}],
 					actions: [
-						{type:'setInput',input:{handle:'skip2', on:'enter'}} // allow skipping if next key is enter.
+						{type:'setIn',in:{handle:'skip2', on:'enter'}} // allow skipping if next key is enter.
 					]
 				},
 				// skip block
 				{
-					conditions: [{type:'inputEquals',value:'skip2'}],
+					conditions: [{type:'inEquals',value:'skip2'}],
 					actions: [
 						{type:'goto', destination: 'nextWhere', properties: {blockStart:true}},
 						{type:'endTrial'}
@@ -514,8 +514,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 				data: {blockStart:true, condition:'instructions', score:0, block:0},
 
 				// create user interface (just click to move on...)
-				input: [
-					proceedInput
+				in: [
+					proceedIn
 				],
 
 				interactions: [
@@ -528,14 +528,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 					},
 					// space hit, end trial soon
 					{
-						conditions: [{type:'inputEquals',value:'space'}],
+						conditions: [{type:'inEquals',value:'space'}],
 						actions: [
 							{type:'hideStim', handle:'All'},
 							{type:'trigger', handle:'endTrial', duration:500}
 						]
 					},
 					{
-						conditions: [{type:'inputEquals',value:'endTrial'}],
+						conditions: [{type:'inEquals',value:'endTrial'}],
 						actions: [{type:'endTrial'}]
 					}
 				]
@@ -643,7 +643,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 				css:piCurrent.practiceCategory2.stimulusCss,
 				media : {inherit:{type:'exRandom',set:'practiceCat2'}}
 			}],	
-			touchInputStimuli: [
+			touchInStimuli: [
 				{media:{html:'<div></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{right:0}, data:{handle:'right'}},
 				{media:{html:'<div></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{left:0}, data:{handle:'left'}}
 			],	
@@ -731,8 +731,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 				}
 			];
             if (!params.isInst && params.isTouch){
-				layout.push({inherit:{type:'byData', set:'touchInputStimuli', data:{handle:'right'}}});
-				layout.push({inherit:{type:'byData', set:'touchInputStimuli', data:{handle:'left'}}});
+				layout.push({inherit:{type:'byData', set:'touchInStimuli', data:{handle:'right'}}});
+				layout.push({inherit:{type:'byData', set:'touchInStimuli', data:{handle:'left'}}});
 			}			
 			if (params.showStimuliWithInst && params.isInst)
 			{//Show the starting stimuli with the instructions' layout.
@@ -1162,13 +1162,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 		API.addSequence(trialSequence);
 
 		/**
-		*Compute scores and feedback messages
+		*Come scores and feedback messages
 		**/
 		
-		function computeSingleCatFB(inCatIndex)
+		function comeSingleCatFB(inCatIndex)
 		{
-			//The score is computed such that the score is more positive when the latency of cond2 is smaller (faster).
-			//We want to compute a score that is more positive when the category is more strongly associated with attribute1.
+			//The score is comed such that the score is more positive when the latency of cond2 is smaller (faster).
+			//We want to come a score that is more positive when the category is more strongly associated with attribute1.
 			var catName = cats[inCatIndex].name;
 			var cond1VarValues = [catName + '/' + attribute2.name];
 			var cond2VarValues = [catName + '/' + attribute1.name];
@@ -1182,8 +1182,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 				}
 			}		
 		
-			//the Scorer that compute the user feedback
-			scorer.addSettings('compute',{
+			//the Scorer that come the user feedback
+			scorer.addSettings('come',{
 				ErrorVar:'score',
 				condVar:"condition",
 				cond1VarValues: cond1VarValues, //scoring condition 1
@@ -1232,7 +1232,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			
 			scorer.addSettings('message',scoreObj);
 			
-			var scored = scorer.computeD();
+			var scored = scorer.comeD();
 			
 			scored.problem = (
 				scored.FBMsg == piCurrent.manyErrors || 
@@ -1284,14 +1284,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 		//What to do at the end of the task.
 		API.addSettings('hooks',{
 			endTask: function(){
-				//Compute and send the score
+				//Come and send the score
 				
 				var scoreObj = {};
 
 				var iCatEnd;
 				for (iCatEnd = 0; iCatEnd < cats.length; iCatEnd++)
 				{
-					var tScoreObj = computeSingleCatFB(iCatEnd);
+					var tScoreObj = comeSingleCatFB(iCatEnd);
 					scoreObj[cats[iCatEnd].name + '_FB'] = tScoreObj.FBMsg;
 					scoreObj[cats[iCatEnd].name + '_score'] = tScoreObj.DScore;
 					var iOtherCatEnd;
@@ -1299,7 +1299,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 					{
 						var prfObj = {};
 						if (tScoreObj.problem)
-						{//If couldn't compute a score for this category, then can't compute preference
+						{//If couldn't come a score for this category, then can't compute preference
 							prfObj = {fb : tScoreObj.FBMsg, score : -9};
 						}
 						else
