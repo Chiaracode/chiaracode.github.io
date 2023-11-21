@@ -8,7 +8,7 @@ define(['pipAPI', 'https://chiaracode.github.io/loroemarinipratica_eng_madre'
 	    
 		categories : [ 
             {
-				name : 'Insetti',
+				name : 'Insects',
 				title : {
 					media : {word : 'Insects'}, //Name of the category presented in the task.
 					css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
