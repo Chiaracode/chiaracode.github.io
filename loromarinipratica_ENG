@@ -35,7 +35,7 @@ define(['pipAPI', 'https://chiaracode.github.io/loroemarinipratica_eng_madre'
 			
 			
 				{
-				name : 'Fiori', //Category label.
+				name : 'Flowers', //Category label.
 				title : {
 					media : {word : 'Flowers'}, 
 					css : {color:'#31b404','font-size':'1.8em'}, 
