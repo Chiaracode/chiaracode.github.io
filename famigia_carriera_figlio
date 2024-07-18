@@ -12,7 +12,7 @@ function(APIConstructor, batExtension){
 					css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
 					height : 4, //Used to position the "Or" in the combined block.
 					startStimulus : {
-						media : {word : 'Maschio, Ragazzo, Lui, Uomo, Uomini, Suo'}, 
+						media : {word : 'Maschio, Suo, Uomo, Ragazzo, Uomini, Lui'}, 
 						css : {color:'#31b404','font-size':'1em'}, 
 						height : 2
 					}
@@ -20,11 +20,11 @@ function(APIConstructor, batExtension){
 				
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{word: 'Maschio'},
-                    {word: 'Ragazzo'},
-                    {word: 'Lui'},
+                    {word: 'Suo'},
                     {word: 'Uomo'},
+                    {word: 'Ragazzo'},
                     {word: 'Uomini'},
-                    {word: 'Suo'}
+                    {word: 'Lui'}
                 ], 
 				//Stimulus css
 				stimulusCss : {color:'#31b404','font-size':'2em'}
@@ -42,7 +42,7 @@ function(APIConstructor, batExtension){
 					height : 4,
 					startStimulus : {
 						media : {
-						    word: 'Femmina, Ragazza, Lei, Donna, Donne, Sua'},
+						    word: 'Femmina, Sua, Donna, Ragazza, Donne, Lei'},
 						    //word : 'Republican, Right Wing, George Bush, Conservative'}, 
 						css : {color:'#31b404','font-size':'1em'}, 
 						height : 2
@@ -50,11 +50,11 @@ function(APIConstructor, batExtension){
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{word: 'Femmina'},   
-                    {word: 'Ragazza'},
-                    {word: 'Lei'},
+                    {word: 'Sua'},
                     {word: 'Donna'},
+                    {word: 'Ragazza'},
                     {word: 'Donne'},
-                    {word: 'Sua'}
+                    {word: 'Lei'}
                 ], 
 				//Stimulus css
 				stimulusCss : {color:'#31b404','font-size':'2em'}
