@@ -145,18 +145,18 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 					css : {color:'#0000FF','font-size':'1.8em'}, 
 					height : 4,
 					startStimulus : {
-						media : {word : 'Famiglia, Cucina, Lavanderia, Casa, Matrimonio, Bambini'}, 
+						media : {word : 'Casa, Cucina, Lavanderia, Famiglia, Matrimonio, Figli'}, 
 						css : {color:'#0000FF','font-size':'1em'}, 
 						height : 2
 					}
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word : 'Famiglia'}, 
+					{word : 'Casa'}, 
 					{word : 'Cucina'}, 
 					{word : 'Lavanderia'},
-          {word : 'Casa'},
+          {word : 'Famiglia'},
           {word : 'Matrimonio'},
-          {word : 'Bambini'}
+          {word : 'Figli'}
 				], 
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2em'}
@@ -169,16 +169,16 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 					css : {color:'#0000FF','font-size':'1.8em'}, 
 					height : 4,
 					startStimulus : {
-						media : {word : 'Carriera, Ufficio, Dirigente, Stipendio, Lavoro, Valigetta'}, 
+						media : {word : 'Stipendio, Ufficio, Dirigente, Carriera, Lavoro, Valigetta'}, 
 						css : {color:'#0000FF','font-size':'1em'}, 
 						height : 2
 					}
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word : 'Carriera'}, 
+					{word : 'Stupendio'}, 
 					{word : 'Ufficio'}, 
 					{word : 'Dirigente'},
-          {word : 'Stipendio'},
+          {word : 'Carriera'},
           {word : 'Lavoro'},
           {word : 'Valigetta'}
 				], 
