@@ -6,7 +6,7 @@ function(APIConstructor, batExtension){
 	return batExtension({
 		categories : [  
 			{
-				name : 'Femmina',
+				name : 'Maschio',
 				title : {
 					media : {word : 'Maschio'}, //Name of the category presented in the task.
 					css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
