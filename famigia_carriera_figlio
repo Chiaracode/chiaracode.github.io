@@ -14,7 +14,7 @@ function(APIConstructor, batExtension){
 					startStimulus : {
 						media : {word : 'Uomo, Ragazzo, Uomini, Lui, Suo'}, 
 						css : {color:'#31b404','font-size':'1em'}, 
-						height : 4
+						height : 2
 					}
 				}, 
 				
@@ -46,7 +46,7 @@ function(APIConstructor, batExtension){
 						    word: 'Donna, Ragazza, Donne, Lei, Sua'},
 						    //word : 'Republican, Right Wing, George Bush, Conservative'}, 
 						css : {color:'#31b404','font-size':'1em'}, 
-						height : 4
+						height : 2
 					}
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
