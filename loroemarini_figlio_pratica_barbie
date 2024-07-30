@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://chiaracode.github.io/loroemarinimadrepratica'
+define(['pipAPI', 'https://chiaracode.github.io/loroemarini_madre_pratica_barbie'
 
 ], function(APIConstructor, batExtension){
     var API = new APIConstructor();
