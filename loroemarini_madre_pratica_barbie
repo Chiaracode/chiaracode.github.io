@@ -186,15 +186,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			//practiceTrials are a few trials at the beginning of the task (Sriram & Greenwald recommend 2 trials for each category).
 			practiceTrials : //Set number of trials per group in the practice trials at the beginning of the task
 			{//Can set 0 to all to remove the practice trials.
-				nFocalCat : 2, //Number of trials for the focal category.
-				nNonFocalCats : 2, //Number of trials for each non-focal category.  (in a mini block).
+				nFocalCat : 0, //Number of trials for the focal category.
+				nNonFocalCats : 0, //Number of trials for each non-focal category.  (in a mini block).
 				nFocalAtt : 0, //Number of trials for the focal attribute (in a mini block).
 				nNonFocalAtt : 0 //Number of trials for the non-focal attribute (in a mini-block). 
 			},
 
 			//In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
 			nMiniBlocks : 1, //Set to 1 if don't need mini blocks. 0 will break the task.
-			nTrialsPerMiniBlock : 16, //50% on the right, 50% left, 50% attributes, 50% categories.
+			nTrialsPerMiniBlock : 8, //50% on the right, 50% left, 50% attributes, 50% categories.
 
 			//Sets whether we use a certain focal attribute throughout the task, or both.
 			focalAttribute : 'attribute1', // Accepts 'attribute1', 'attribute2' or 'both', 
