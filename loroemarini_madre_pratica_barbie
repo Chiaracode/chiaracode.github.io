@@ -193,7 +193,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			},
 
 			//In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
-			nMiniBlocks : 1, //Set to 1 if don't need mini blocks. 0 will break the task.
+			nMiniBlocks : 0, //Set to 1 if don't need mini blocks. 0 will break the task.
 			nTrialsPerMiniBlock : 16, //50% on the right, 50% left, 50% attributes, 50% categories.
 
 			//Sets whether we use a certain focal attribute throughout the task, or both.
