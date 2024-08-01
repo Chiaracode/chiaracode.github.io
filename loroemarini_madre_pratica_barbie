@@ -203,7 +203,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor,Scorer, _) {
 			firstFocalAttribute : 'random', //Accepts 'attribute1', 'attribute2' or 'random'. 
 			
 			//Whether to start with a practice block.
-			practiceBlock : true, 
+			practiceBlock : false, 
 			nPracticeBlockTrials : 8, //Should be at least 8 trials.
 
 			//Number of blocks per focal category-attribute combination.
