@@ -3,9 +3,9 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
 
 	return iatExtension({
 		category1 : {
-			name : 'Black people', //Will appear in the data.
+			name : 'LGBT people', //Will appear in the data.
 			title : {
-				media : {word : 'LGBT'}, //Name of the category presented in the task.
+				media : {word : 'LGBT people'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -21,9 +21,9 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 		category2 :	{
-			name : 'Heterosexual', //Will appear in the data.
+			name : 'Heterosexual people', //Will appear in the data.
 			title : {
-				media : {word : 'White people'}, //Name of the category presented in the task.
+				media : {word : 'Heterosexual people'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
