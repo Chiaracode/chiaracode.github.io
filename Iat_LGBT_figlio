@@ -1,4 +1,4 @@
-// define(['https://chiaracode/Iat/Mother_LGBT_QUALTRICS'], function(iatExtension){
+// define(['https://chiaracode.github.io/Iat_Lgbt_mother'], function(iatExtension){
 //define(['pipAPI','/implicit/common/all/js/pip/piscripts/iat/iat5.js'], function(APIConstructor, iatExtension){
     
 define(['pipAPI','/implicit/user/mmarini/LGBT_study_DEF/iat_extension.js'], function(APIConstructor, iatExtension){
