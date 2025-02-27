@@ -3,18 +3,18 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
 
     return iatExtension({
         category1: {
-            name: 'Cospirazione', // Will appear in the data.
+            name: 'Conspiracy', // Will appear in the data.
             title: {
-                media: {word: 'Cospirazione'}, // Name of the category presented in the task.
+                media: {word: 'Conspiracy'}, // Name of the category presented in the task.
                 css: {color:'#31940F', 'font-size':'2em'}, // Style of the category title.
                 height: 4 // Used to position the "Or" in the combined block.
             }, 
             stimulusMedia: [ // Stimuli content as PIP's media objects
-                {word: 'Complotto'}, 
-                {word: 'Cospirare'}, 
-                {word: 'Complottismo'}, 
-                {word: 'Cospirazionismo'}, 
-                {word: 'Inganno'}
+                {word: 'Conspire'}, 
+                {word: 'Conspiracism'}, 
+                {word: 'Plot'}, 
+                {word: 'Deception'}, 
+                {word: 'Conspiracist'}
             ], 
             // Stimulus css (style)
             stimulusCss: {color:'#31940F', 'font-size':'1.8em'}
@@ -22,25 +22,25 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
         category2: {
             name: 'Verità', // Will appear in the data.
             title: {
-                media: {word: 'Verità'}, // Name of the category presented in the task.
+                media: {word: 'Truth'}, // Name of the category presented in the task.
                 css: {color:'#31940F', 'font-size':'2em'}, // Style of the category title.
                 height: 4 // Used to position the "Or" in the combined block.
             }, 
             stimulusMedia: [ // Stimuli content as PIP's media objects
-                {word: 'Onestà'},
-                {word: 'Fiducia'},
-                {word: 'Trasparenza'},
-                {word: 'Lealtà'},
-                {word: 'Sincerità'}
+                {word: 'Trust'},
+                {word: 'Transparency'},
+                {word: 'Sincerity'},
+                {word: 'Loyalty'},
+                {word: 'Honesty'}
             ], 
             // Stimulus css
             stimulusCss: {color:'#31940F', 'font-size':'1.8em'}
         },  
 
 attribute1: {
-            name: 'Persone Eterosessuali', // Will appear in the data.
+            name: 'Heterosexual People', // Will appear in the data.
             title: {
-                media: {word: 'Persone Eterosessuali'}, // Name of the category presented in the task.
+                media: {word: 'Heterosexual People'}, // Name of the category presented in the task.
                 css: {color:'#31940F', 'font-size':'2em'}, // Style of the category title.
                 height: 4 // Used to position the "Or" in the combined block.
             }, 
@@ -56,9 +56,9 @@ attribute1: {
             stimulusCss: {color:'#31940F', 'font-size':'1.8em'}
         },  
  attribute2: {
-            name: 'Persone LGBT', // Will appear in the data.
+            name: 'LGBT People', // Will appear in the data.
             title: {
-                media: {word: 'Persone LGBT'}, // Name of the category presented in the task.
+                media: {word: 'LGBT People'}, // Name of the category presented in the task.
                 css: {color:'#31940F', 'font-size':'2em'}, // Style of the category title.
                 height: 4 // Used to position the "Or" in the combined block.
             }, 
