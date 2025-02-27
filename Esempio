@@ -39,7 +39,7 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
 		},	
 
 		base_url : {//Where are your images at?
-			image : 'https://github.com/Chiaracode/chiaracode_images.git'
+			image : 'https://chiaracode.github.io/'
 		} 
 	});
 });
