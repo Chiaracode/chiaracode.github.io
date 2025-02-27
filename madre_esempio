@@ -41,8 +41,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Malik'},
 					{word: 'Terrell'},
 					{word: 'Jazmin'},
-					{word: 'Tiara'},
-					{word: 'Shanice'}
+					{word: 'Tiara'}
 				],
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -59,8 +58,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Connor'},
 					{word: 'Bradley'},
 					{word: 'Allison'},
-					{word: 'Emma'},
-					{word: 'Emily'}
+					{word: 'Emma'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -78,10 +76,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'failure'},
 					{word: 'agony'},
 					{word: 'hurt'},
-					{word: 'horrible'},
-					{word: 'terrible'},
-					{word: 'nasty'},
-					{word: 'evil'}
+					{word: 'horrible'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -99,10 +94,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'happy'},
 					{word: 'glorious'},
 					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
-					{word: 'love'}
+					{word: 'wonderful'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
