@@ -14,8 +14,7 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
     			{image : 'LGBT2.jpg'}, 
     			{image : 'LGBT3.jpg'}, 
     			{image : 'LGBT4.jpg'}, 
-    			{image : 'LGBT5.jpg'}, 
-    			{image : 'LGBT6.jpg'}
+    			{image : 'LGBT5.jpg'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
@@ -32,8 +31,7 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
     			{image : 'ETERO2.jpg'}, 
     			{image : 'ETERO3.jpg'}, 
     			{image : 'ETERO4.jpg'}, 
-    			{image : 'ETERO5.jpg'}, 
-    			{image : 'ETERO6.jpg'}			], 
+    			{image : 'ETERO5.jpg'}			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
