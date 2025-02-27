@@ -10,12 +10,12 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'LGBT1.png'}, 
-    			{image : 'LGBT2.png'}, 
-    			{image : 'LGBT3.png'}, 
-    			{image : 'LGBT4.png'}, 
-    			{image : 'LGBT5.png'}, 
-    			{image : 'LGBT6.png'}
+    		    {image : 'LGBT1.jpg'}, 
+    			{image : 'LGBT2.jpg'}, 
+    			{image : 'LGBT3.jpg'}, 
+    			{image : 'LGBT4.jpg'}, 
+    			{image : 'LGBT5.jpg'}, 
+    			{image : 'LGBT6.jpg'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
@@ -28,12 +28,12 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'ETERO1.png'}, 
-    			{image : 'ETERO2.png'}, 
-    			{image : 'ETERO3.png'}, 
-    			{image : 'ETERO4.png'}, 
-    			{image : 'ETERO5.png'}, 
-    			{image : 'ETERO6.png'}			], 
+    		    {image : 'ETERO1.jpg'}, 
+    			{image : 'ETERO2.jpg'}, 
+    			{image : 'ETERO3.jpg'}, 
+    			{image : 'ETERO4.jpg'}, 
+    			{image : 'ETERO5.jpg'}, 
+    			{image : 'ETERO6.jpg'}			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
