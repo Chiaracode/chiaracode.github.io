@@ -39,7 +39,7 @@ var API = new APIConstructor();
 		},	
 
 		base_url : {//Where are your images at?
-			image : 'https://github.com/Chiaracode/images'
+			image : 'https://raw.githubusercontent.com/Chiaracode/images/main/'
 		} 
 	});
 });
