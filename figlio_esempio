@@ -1,0 +1,145 @@
+define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APIConstructor, iatExtension){
+     var API = new APIConstructor();
+
+	return iatExtension({
+		category1 : 
+		{
+			name : 'Cospirazione', //Will appear in the data.
+			title : {
+				media : {word : 'Cospirazione'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				    {word: 'Complotto'},
+                    {word: 'Cospirare'},
+                    {word: 'Complottismo'},
+                    {word: 'Cospirazionismo'},
+                    {word: 'Inganno'}
+
+                
+			], 
+			//Stimulus css (style)
+			stimulusCss : {color:'#31b404', 'font-size':'2em'}
+		},	
+		category2 :	{
+			name : 'Verità', //Will appear in the data.
+			title : {
+				media : {word : 'Verità'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				    {word: 'Onestà'},
+                    {word: 'Fiducia'},
+                    {word: 'Trasparenza'},
+                    {word: 'Lealtà'},
+                    {word: 'Sincerità'}
+                    
+    		], 
+			//Stimulus css
+			stimulusCss : {color:'#31b404','font-size':'2em'}
+		},
+		attribute2 : 
+		{
+			name : 'Persone Eterosessuali', 
+			title : {
+				media : {word : 'Persone Eterosessuali'}, 
+				css : {color:'#0000FF','font-size':'1.8em'}, 
+				height : 4 //Used to position the "Or" in the combined block.
+			},
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+			        {image: 'ETERO1.jpg'},
+                    {image: 'ETERO2.jpg'},
+                    {image: 'ETERO3.jpg'},
+                    {image: 'ETERO5.jpg'},
+                    {image: 'ETERO6.jpg'}
+			], 
+			//Stimulus css
+			stimulusCss : {color:'#0000FF','font-size':'1.8em'} 
+		},
+		attribute1 : 
+		{
+			name : 'Persone LGBT', 
+			title : {
+				media : {word : 'Persone LGBT'}, 
+				css : {color:'#0000FF','font-size':'1.8em'}, 
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				    {image: 'LGBT1.jpg'},
+                    {image: 'LGBT2.jpg'},
+                    {image: 'LGBT3.jpg'},
+                    {image: 'LGBT5.jpg},
+                    {image: 'LGBT6.jpg'}
+            ], 
+			//Stimulus css
+			stimulusCss : {color:'#0000FF','font-size':'1.8em'}
+		},
+    isTouch : API.getGlobal().isTouch,
+		
+        
+		base_url : {//Where are your images at?
+			image : 'https://chiaracode.github.io/'
+		},
+			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
+				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+				'Premi con il tuo indice sinistro il tasto <b>E</b> per le parole che appartengono alla categoria <font color="#0000ff">leftAttribute.</font>' + 
+				'<br/>Premi con il tuo indice destro il tasto <b>I</b> per le parole che appartengono alla categoria <font color="#0000ff">rightAttribute</font>.<br/><br/>' + 
+				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà sullo schermo.' + 
+				"In questo caso, premi l'altro tasto per continuare. " + 
+				"<u>Cerca di essere il piu' veloce </u> ed accurato possibile.<br/><br/>"+
+				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto ad iniziare .</font></p></div>', 
+			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
+				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+				'Premi con il tuo indice sinistro il tasto <b>E</b> per le parole che appartengono alla categoria <font color="#31b404">leftCategory</font>. ' + 
+				'<br/>Premi con il tuo indice destro il tasto <b>I</b> per le parole che appartengono alla categoria <font color="#31b404">rightCategory</font>.<br/>' + 
+				'Le parole appariranno una alla volta.<br/><br/>' + 
+				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> apparirà sullo schermo.' + 
+				"In questo caso, premi l'altro tasto per continuare. " + 
+				"<u>Cerca di essere il piu' veloce </u> ed accurato possibile.<br/><br/>"+
+				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto ad iniziare.</font></p></div>', 
+			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
+				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+				'Premi il tasto <b>E</b> per <font color="#31b404">leftCategory</font> e per <font color="#0000ff">leftAttribute</font><br/>' + 
+				'Premi il tasto <b>I</b> per <font color="#31b404">rightCategory</font> e <font color="#0000ff">rightAttribute</font><br/>' + 
+				'Ogni parola appartiene ad una sola categoria.<br/><br/>' + 
+				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà sullo schermo. ' + 
+				"In questo caso, premi l'altro tasto per continuare. <u> Cerca di essere il piu' veloce </u> e accurato possibile.<br/><br/>" + 
+				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto per iniziare.</font></p></div>', 
+			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
+				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+				'Questa parte del compito è come quella precedente.<br/>' + 
+				'Premi il tasto <b>E</b> per <font color="#31b404">leftCategory</font> e per <font color="#0000ff">leftAttribute</font><br/>' + 
+				'Premi il tasto <b>I</b> per <font color="#31b404">rightCategory</font> e per <font color="#0000ff">rightAttribute</font><br/>' + 
+				'Ogni parola appartiene ad una sola categoria.<br/><br/>' + 
+				'<u>Cerca di essere il più veloce </u> and accurato possibile. <br/><br/>' + 
+				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto ad iniziare.</font></p></div>', 
+			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
+				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+				'<b>Attenzione, le etichette in alto hanno cambiato posizione!</b><br/>' + 
+				'Premi con il tuo indice sinistro il tasto <b>E</b> per <font color="#31b404">leftCategory</font>.<br/>' + 
+				'Premi con il tuo indice destro il tasto <b>I</b> per <font color="#31b404">rightCategory</font>.<br/><br/>' + 
+				'<u>Cerca di essere il più veloce </u> ed accurato possibile.<br/><br/>' + 
+				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto ad iniziare.</font></p></div>', 
+				instThirdCombined : 'instFirstCombined', //this means that we're going to use the instFirstCombined property for the third combined block as well. You can change that.
+			instFourthCombined : 'instSecondCombined', //this means that we're going to use the instSecondCombined property for the fourth combined block as well. You can change that.
+	//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
+		//categoryA is the name of the category that is found to be associated with attribute1,
+		//and categoryB is the name of the category that is found to be associated with attribute2.
+		fb_strong_Att1WithCatA_Att2WithCatB : 'I tuoi dati suggeriscono una forte associazione automatica attribute2-categoryB e attribute1-categoryA.',
+		fb_moderate_Att1WithCatA_Att2WithCatB : 'I tuoi dati suggeriscono una moderata associazione automatica attribute2-categoryB e attribute1-categoryA.',
+		fb_slight_Att1WithCatA_Att2WithCatB : 'I tuoi dati suggeriscono una leggera associazione automatica attribute2-categoryB and attribute1-categoryA.',
+		fb_equal_CatAvsCatB : 'I tuoi dati suggeriscono nessuna associazione automatica attribute2-categoryB and attribute1-categoryA.',
+		//Error messages in the feedback
+			manyErrors: 'Sono stati commessi troppi errori per determinare un risultato.',
+			tooFast: 'Sono state date risposte troppo veloci per determinare un risultato.',
+			notEnough: 'Non ci sono state sufficienti prove per determinare un risultato.'
+	});
+	
+	});
