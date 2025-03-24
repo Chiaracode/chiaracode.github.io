@@ -83,8 +83,8 @@ attribute1: {
 				'Premi con il tuo indice sinistro il tasto <b>E</b> per le parole che appartengono alla categoria <font color="#0000ff">leftAttribute.</font>' + 
 				'<br/>Premi con il tuo indice destro il tasto <b>I</b> per le parole che appartengono alla categoria <font color="#0000ff">rightAttribute</font>.<br/><br/>' + 
 				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà sullo schermo.' + 
-				"In questo caso, premi l'altro tasto per continuare. " + 
-				"<u>Cerca di essere il piu' veloce </u> ed accurato possibile.<br/><br/>"+
+				'In questo caso, premi l'altro tasto per continuare.' + 
+				'<u>Cerca di essere il piu' veloce </u> ed accurato possibile.<br/><br/>'+
 				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto ad iniziare .</font></p></div>', 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
@@ -93,8 +93,8 @@ attribute1: {
 				'<br/>Premi con il tuo indice destro il tasto <b>I</b> per le parole che appartengono alla categoria <font color="#31b404">rightCategory</font>.<br/>' + 
 				'Le parole appariranno una alla volta.<br/><br/>' + 
 				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> apparirà sullo schermo.' + 
-				"In questo caso, premi l'altro tasto per continuare. " + 
-				"<u>Cerca di essere il piu' veloce </u> ed accurato possibile.<br/><br/>"+
+				'In questo caso, premi l'altro tasto per continuare.'+ 
+				'<u>Cerca di essere il piu' veloce </u> ed accurato possibile.<br/><br/>'+
 				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto ad iniziare.</font></p></div>', 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
@@ -102,8 +102,8 @@ attribute1: {
 				'Premi il tasto <b>E</b> per <font color="#31b404">leftCategory</font> e per <font color="#0000ff">leftAttribute</font><br/>' + 
 				'Premi il tasto <b>I</b> per <font color="#31b404">rightCategory</font> e <font color="#0000ff">rightAttribute</font><br/>' + 
 				'Ogni parola appartiene ad una sola categoria.<br/><br/>' + 
-				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà sullo schermo. ' + 
-				"In questo caso, premi l'altro tasto per continuare. <u> Cerca di essere il piu' veloce </u> e accurato possibile.<br/><br/>" + 
+				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà sullo schermo.' + 
+				'In questo caso, premi l'altro tasto per continuare. <u> Cerca di essere il piu' veloce </u> e accurato possibile.<br/><br/>' + 
 				'<p align="center">Premi la <b>barra spaziatrice</b> quando sei pronto per iniziare.</font></p></div>', 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Parte blockNum di nBlocks </u><br/><br/></p>' + 
