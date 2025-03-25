@@ -172,7 +172,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Premi con il tuo indice sinistro il tasto <b>E</b> per le parole che appartengono alla categoria <font color="#0000ff">leftAttribute.</font>' +
 				'<br/>Premi con il tuo indice destro il tasto <b>I</b> per le parole che appartengono alla categoria <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
 				'Se commetti un errore, una <font color="#ff0000"><b>X</b></font> rossa apparirà sullo schermo. ' +
-				'In questo caso, premi l'altro tasto per continuare.<br/>' +
+				'In questo caso, premi l altro tasto per continuare.<br/>' +
 				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
 			instAttributePracticeTouch: [
