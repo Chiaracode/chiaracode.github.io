@@ -76,7 +76,6 @@ attribute1: {
 
         base_url: { // Where are your images at?
             image: 'https://chiaracode.github.io/'
-        },
-
+        } 
     });
 });
