@@ -65,7 +65,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			attribute1 :
 			{
-				name : 'Conspiracy',
+				name : 'Bad words',
 				title : {
 					media : {word : 'Bad words'},
 					css : {color:'#0000FF','font-size':'1.8em'},
