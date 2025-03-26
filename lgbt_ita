@@ -41,7 +41,7 @@ attribute1: {
             name: 'Persone Eterosessuali', // Will appear in the data.
             title: {
                 media: {word: 'Persone Eterosessuali'}, // Name of the category presented in the task.
-                css: {color:'#31940F', 'font-size':'2em'}, // Style of the category title.
+                css: {color:'#0000FF', 'font-size':'2em'}, // Style of the category title.
                 height: 4 // Used to position the "Or" in the combined block.
             }, 
             stimulusMedia: [ // Stimuli content as PIP's media objects
@@ -53,13 +53,13 @@ attribute1: {
 
             ], 
             // Stimulus css
-            stimulusCss: {color:'#31940F', 'font-size':'1.8em'}
+            stimulusCss: {color:'#0000FF', 'font-size':'1.8em'}
         },  
  attribute2: {
             name: 'Persone LGBT', // Will appear in the data.
             title: {
                 media: {word: 'Persone LGBT'}, // Name of the category presented in the task.
-                css: {color:'#31940F', 'font-size':'2em'}, // Style of the category title.
+                css: {color:'#0000FF', 'font-size':'2em'}, // Style of the category title.
                 height: 4 // Used to position the "Or" in the combined block.
             }, 
             stimulusMedia: [ // Stimuli content as PIP's media objects
@@ -71,7 +71,7 @@ attribute1: {
 
             ], 
             // Stimulus css
-            stimulusCss: {color:'#31940F', 'font-size':'1.8em'}
+            stimulusCss: {color:'#0000FF', 'font-size':'1.8em'}
         },  
 
         base_url: { // Where are your images at?
