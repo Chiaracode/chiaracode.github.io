@@ -37,7 +37,7 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_esempio'], function(APICon
             stimulusCss: {color:'#31940F', 'font-size':'1.8em'}
         },  
 
-attribute1: {
+attribute2: {
             name: 'Heterosexual People', // Will appear in the data.
             title: {
                 media: {word: 'Heterosexual People'}, // Name of the category presented in the task.
@@ -55,7 +55,7 @@ attribute1: {
             // Stimulus css
             stimulusCss: {color:'#0000FFF', 'font-size':'1.8em'}
         },  
- attribute2: {
+ attribute1: {
             name: 'LGBT People', // Will appear in the data.
             title: {
                 media: {word: 'LGBT People'}, // Name of the category presented in the task.
