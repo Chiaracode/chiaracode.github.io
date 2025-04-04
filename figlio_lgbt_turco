@@ -22,7 +22,7 @@ define(['pipAPI', 'https://chiaracode.github.io/madre_LGBT_turco'], function(API
         category2: {
             name: 'Gerçek', // Will appear in the data.
             title: {
-                media: {word: 'Truth'}, // Name of the category presented in the task.
+                media: {word: 'Gerçek'}, // Name of the category presented in the task.
                 css: {color:'#31940F', 'font-size':'2em'}, // Style of the category title.
                 height: 4 // Used to position the "Or" in the combined block.
             }, 
