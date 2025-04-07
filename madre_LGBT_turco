@@ -249,8 +249,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Bölüm blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Bu, önceki bölümle aynıdır.<br/>' +
-				'<b>E</b> tuşunu <font color="#336600">leftCategory</font>  için ve <font color="#0000ff">leftAttribute</font> için kullanın.<br/>' +
-				'<b>I</b> tuşunu <font color="#336600">rightCategory</font>  için ve  <font color="#0000ff">rightAttribute</font> için kullanın.<br/>' +
+				'<b>E</b> tuşunu <font color="#336600">leftCategory</font> için ve <font color="#0000ff">leftAttribute</font>  için kullanın. <br/>' +
+				'<b>I</b> tuşunu <font color="#336600">rightCategory</font> için ve  <font color="#0000ff">rightAttribute</font>  için kullanın. <br/>' +
 				'Her öğe yalnızca bir kategoriye aittir..<br/><br/>' +
 				'<u>Mümkün olduğunca hızlı gidin</u> ama isabetli olun.<br/><br/></p>' +
 				'<p align="center">Başlamaya hazır olduğunuzda <b>boşluk tuşuna</b> basın.</font></p></div>',
