@@ -167,9 +167,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Bölüm blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Kategoriye ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun <font color="#0000ff">leftAttribute.</font>' +
+				'<font color="#0000ff">' + leftAttribute + '</font> kategorisine ait ögeler için sol parmağınızı <b>E</b> tuşuna basın.<br/>' +
 				'<br/>Kategoriye ait öğeler için sağ parmağınızı <b>I</b> tuşuna koyun <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
 				'Bir hata yaparsanız, kırmızı bir <font color="#ff0000"><b>X</b></font> görünecektir. ' +
 				'Devam etmek için diğer tuşa basın.<br/>' +
