@@ -275,7 +275,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>Dikkat et, etiketlerin yeri değişti!</b><br/>' +
 				'<font color="#336600">leftCategory</font> için sol parmağınızı <b>E</b> tuşunu basın.<br/>' +
-				'<b>I</b> tuşu için sol parmağınızı kullanın <font color="#336600">rightCategory</font>.<br/><br/>' +
+				'<font color="#336600">rightCategory</font> için sağ parmağınızı <b>I</b> tuşunu basın.<br/><br/>' +
 				'<u>Mümkün olduğunca hızlı gidin</u> ama isabetli olun.<br/><br/></p>' +
 				'<p align="center">Başlamaya hazır olduğunuzda <b>boşluk tuşuna</b> basın.</font></p></div>',
 			instSwitchCategoriesTouch: [
