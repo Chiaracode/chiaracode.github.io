@@ -251,7 +251,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Bu, önceki bölümle aynıdır.<br/>' +
 				'<b>E</b> tuşunu <font color="#336600">leftCategory</font>  için ve <font color="#0000ff">leftAttribute</font> için kullanın.<br/>' +
 				'<b>I</b> tuşunu <font color="#336600">rightCategory</font>  için ve  <font color="#0000ff">rightAttribute</font> için kullanın.<br/>' +
-				'Her öğe yalnızca bir kategoriye aittir..<br/><br/>' +
+				'Her öğe yalnızca bir kategoriye aittir.<br/><br/>' +
 				'<u>Mümkün olduğunca hızlı gidin</u> ama isabetli olun.<br/><br/></p>' +
 				'<p align="center">Başlamaya hazır olduğunuzda <b>boşluk tuşuna</b> basın.</font></p></div>',
 			instSecondCombinedTouch:[
