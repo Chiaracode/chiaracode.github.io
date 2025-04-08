@@ -193,7 +193,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Bölüm blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<font color="#336600">leftCategory</font> kategoriye ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun. ' +
 				'<br/>Kategoriye ait öğeler için sağ parmağınızı <b>I</b> tuşuna koyun <font color="#336600">rightCategory</font>.<br/>' +
@@ -220,7 +220,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Bölüm blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>E</b> tuşunu <font color="#336600">leftCategory</font>  için ve <font color="#0000ff">leftAttribute</font>  için kullanın.<br/>' +
 				'<b>I</b> tuşunu <font color="#336600">rightCategory</font>  için ve <font color="#0000ff">rightAttribute</font>  için kullanın.<br/>' +
@@ -246,7 +246,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Bölüm blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Bu, önceki bölümle aynıdır.<br/>' +
 				'<b>E</b> tuşunu <font color="#336600">leftCategory</font>  için ve <font color="#0000ff">leftAttribute</font> için kullanın.<br/>' +
@@ -271,7 +271,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Bölüm blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>Dikkat et, etiketlerin yeri değişti!</b><br/>' +
 				'<b>E</b> tuşu için sol parmağınızı kullanın <font color="#336600">leftCategory</font>.<br/>' +
