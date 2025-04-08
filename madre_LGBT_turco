@@ -169,7 +169,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<font color="#0000ff">leftAttribute.</font> kategorisine ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun.' +
+				'<font color="#0000ff">leftAttribute </font> kategorisine ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun. <br/>' +
 				'<font color="#0000ff">rightAttribute</font> kategorisine ait öğeler için sağ parmağınızı <b>I</b> tuşuna koyun.<br/><br/>' +
 				'Bir hata yaparsanız, kırmızı bir <font color="#ff0000"><b>X</b></font> görünecektir. ' +
 				'Devam etmek için diğer tuşa basın.<br/>' +
@@ -195,8 +195,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<font color="#336600">leftCategory</font> kategorisine ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun. ' +
-				'<font color="#336600">rightCategory</font><br/>kategorisine ait öğeler için sağ parmağınızı <b>I</b> tuşuna koyun .<br/>' +
+				'<font color="#336600">leftCategory</font> kategorisine ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun. <br/>' +
+				'<font color="#336600">rightCategory</font><br/>kategorisine ait öğeler için sağ parmağınızı <b>I</b> tuşuna koyun. <br/>' +
 				'Öğeler birer birer görünecektir.<br/><br/>' +
 				'Bir hata yaparsanız, kırmızı bir <font color="#ff0000"><b>X</b></font> görünecektir. ' +
 				'Devam etmek için diğer tuşa basın.<br/>' +
