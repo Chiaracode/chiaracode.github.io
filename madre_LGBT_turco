@@ -169,8 +169,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Bölüm blockNum Kısmı nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Kategoriye ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Kategoriye ait öğeler için sağ parmağınızı <b>I</b> tuşuna koyun <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'<font color="#0000ff">leftAttribute.</font> kategoriye ait öğeler için sol parmağınızı <b>E</b> tuşuna koyun.' +
+				'<br/><font color="#0000ff">rightAttribute</font> kategoriye ait öğeler için sağ parmağınızı <b>I</b> tuşuna koyun.<br/><br/>' +
 				'Bir hata yaparsanız, kırmızı bir <font color="#ff0000"><b>X</b></font> görünecektir. ' +
 				'Devam etmek için diğer tuşa basın.<br/>' +
 				'<u>Mümkün olduğunca hızlı gidin </u> ama isabetli olun.<br/><br/></p>'+
