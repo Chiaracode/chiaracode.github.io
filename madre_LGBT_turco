@@ -41,7 +41,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Malik'},
 					{word: 'Terrell'},
 					{word: 'Jazmin'},
-					{word: 'Tiara'}
+					{word: 'Tiara'},
+					{word: 'Shanice'}
 				],
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -58,30 +59,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Connor'},
 					{word: 'Bradley'},
 					{word: 'Allison'},
-					{word: 'Emma'}
+					{word: 'Emma'},
+					{word: 'Emily'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			attribute1 :
-			{
-				name : 'Conspiracy',
-				title : {
-					media : {word : 'Bad words'},
-					css : {color:'#0000FF','font-size':'1.8em'},
-					height : 4 //Used to position the "Or" in the combined block.
-				},
-				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'awful'},
-					{word: 'failure'},
-					{word: 'agony'},
-					{word: 'hurt'},
-					{word: 'horrible'}
-				],
-				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
-			},
-			attribute2 :
 			{
 				name : 'Good words',
 				title : {
@@ -94,7 +78,31 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'happy'},
 					{word: 'glorious'},
 					{word: 'joy'},
-					{word: 'wonderful'}
+					{word: 'wonderful'},
+					{word: 'peace'},
+					{word: 'pleasure'},
+					{word: 'love'}
+				],
+				//Stimulus css
+				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+			},
+			attribute2 :
+			{
+				name : 'Bad words',
+				title : {
+					media : {word : 'Bad words'},
+					css : {color:'#0000FF','font-size':'1.8em'},
+					height : 4 //Used to position the "Or" in the combined block.
+				},
+				stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word: 'awful'},
+					{word: 'failure'},
+					{word: 'agony'},
+					{word: 'hurt'},
+					{word: 'horrible'},
+					{word: 'terrible'},
+					{word: 'nasty'},
+					{word: 'evil'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -342,8 +350,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
             // Transform logs into a string
             // we save as CSV because qualtrics limits to 20K characters and this is more efficient.
             serialize: function (name, logs) {
-                var headers = ['block', 'trial', 'cond', 'comp', 'type', 'cat',  'stim', 'resp', 'err', 'rt', 'd', 'fb', 'bOrd'];
-                //console.log(logs);
+                var headers = ['block', 'trial', 'cond', 'comp', 'type', 'cat',  'stim', 'resp', 'err', 'rt', 'sessionid'];
+                // var headers = ['block', 'trial', 'cond', 'comp', 'type', 'cat', 'stim', 'resp', 'err', 'rt', 'fb', 'bOrd']; // <--- Silenziato
+		//console.log(logs);
                 var myLogs = [];
                 var iLog;
                 for (iLog = 0; iLog < logs.length; iLog++)
@@ -376,27 +385,27 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
                         log.responseHandle, //'resp'
                         log.data.score, //'err'
                         log.latency, //'rt'
-                        '', //'d'
-                        '', //'fb'
-                        '' //'bOrd'
+                         // '', //'d'  <--- Silenziato
+                         //'', //'fb'  <--- Silenziato
+                        //  '' //'bOrd'  <--- Silenziato
                         ]; });
                 //console.log('mapped');
                 //Add a line with the feedback, score and block-order condition
-                content.push([
-                            9, //'block'
-                            999, //'trial'
-                            'end', //'cond'
-                            '', //'comp'
-                            '', //'type'
-                            '', //'cat'
-                            '', //'stim'
-                            '', //'resp'
-                            '', //'err'
-                            '', //'rt'
-                            piCurrent.d, //'d'
-                            piCurrent.feedback, //'fb'
-                            block3Cond //'bOrd'
-                        ]);
+                // content.push([
+                //           9, //'block'
+                //           999, //'trial'
+                //          'end', //'cond'
+                //           '', //'comp'
+                //            '', //'type'
+                //            '', //'cat'
+                //            '', //'stim'
+                //            '', //'resp'
+                //            '', //'err'
+                //            '', //'rt'
+                           // piCurrent.d, //'d'
+                           // piCurrent.feedback, //'fb'
+                         //   block3Cond //'bOrd'
+                   //     ]);
                 //console.log('added');
                         
                 content.unshift(headers);
